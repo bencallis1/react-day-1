@@ -1,9 +1,8 @@
 import React from 'react';
 
-require("./Nav.css");
 const NavBar = ({props}) => {
     return (
-        <nav className="navbar">
+        <nav>
             <ul>
                 {props.map((data, index) => {
                     return (
@@ -19,6 +18,6 @@ const NavBar = ({props}) => {
 
 NavBar.propTypes = {
     props: React.PropTypes.array.isRequired
-}
+};
 
 export default NavBar
